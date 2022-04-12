@@ -1,12 +1,12 @@
 import React from "react";
-import { Button, Container, Form, Nav, Navbar } from "react-bootstrap";
+import { Button, Container, Nav, Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <Navbar bg="dark" variant="dark" expand="lg" className="p-3">
       <Container fluid className="container">
-        <Navbar.Brand href="#home">
+        <Navbar.Brand href="#home" className="fs-4">
           <img
             alt=""
             src="/public/logo192.png"
@@ -24,16 +24,19 @@ const Header = () => {
             navbarScroll
           >
             <div className="navbar-nav">
-              <Link className="nav-link active" aria-current="page" to="/">
+              <Link className="nav-link active ms-2" aria-current="page" to="/">
                 HOME
               </Link>
-              {/* <Link class="nav-link" to="/review">REVIEW</Link>
-                <Link class="nav-link" to="/dasboard">DASHBOARD</Link>
-                <Link class="nav-link" to="/blogs">BLOGS</Link>
-                <Link class="nav-link" to="/about">ABOUT</Link> */}
+              <Link className = "nav-link" to="/review">REVIEW</Link>
+                <Link className = "nav-link" to="/dashboard">DASHBOARD</Link>
+                <Link className = "nav-link" to="/blogs">BLOGS</Link>
+                <Link className = "nav-link" to="/about">ABOUT</Link>
             </div>
           </Nav>
           <div className="navbar-nav">
+            <Link className="nav-link" to="/register">
+              <Button variant="outline-info">Register</Button>
+            </Link>
             <Link className="nav-link" to="/login">
               <Button variant="outline-info">LOGIN</Button>
             </Link>
