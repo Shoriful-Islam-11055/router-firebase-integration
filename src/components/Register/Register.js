@@ -5,10 +5,10 @@ import { Button, Col, Form, Row } from "react-bootstrap";
 const Register = () => {
   return (
     <div>
-      <h2 className="text-success text-center">please Register!</h2>
-
+        <p className="mt-3"></p>
       <div className="w-75 mx-auto bg-color">
         <Form className="">
+        <h2 className="text-center">please Register!</h2>
           <Row className="mb-3">
             <Form.Group as={Col} controlId="formGridEmail">
               <Form.Label>Email</Form.Label>
@@ -52,7 +52,7 @@ const Register = () => {
           </Row>
 
           <Button variant="primary" type="submit">
-            Submit
+            Register
           </Button>
         </Form>
       </div>
