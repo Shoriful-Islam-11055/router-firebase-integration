@@ -1,7 +1,10 @@
 import React from "react";
 import { Button, Form } from "react-bootstrap";
+import useFirebase from "../hooks/useFirebase";
 
 const Login = () => {
+  const {signInWithGoogle} = useFirebase();
+
   return (
     <div>
       <p className="mt-3"></p>
@@ -28,7 +31,7 @@ const Login = () => {
               Login
             </Button>
             <span className="px-3">Or</span>
-            <Button variant="primary" type="submit">
+            <Button onClick={signInWithGoogle} variant="primary" type="submit">
               Google Sign In
             </Button>
           </div>
