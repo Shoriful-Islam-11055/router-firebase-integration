@@ -34,8 +34,8 @@ const Header = () => {
               <Link className="nav-link active ms-2" aria-current="page" to="/">
                 HOME
               </Link>
-              <Link className="nav-link" to="/review">
-                REVIEW
+              <Link className="nav-link" to="/order">
+                ORDER
               </Link>
               <Link className="nav-link" to="/dashboard">
                 DASHBOARD
